@@ -66,7 +66,7 @@ public class SecretBuildWrapper extends BuildWrapper {
         }
 
         public void doUpload(StaplerRequest req, StaplerResponse rsp, @QueryParameter String job) throws IOException, ServletException {
-            AbstractProject prj = (AbstractProject) Hudson.getInstance().getItem(job);
+            AbstractProject prj = (AbstractProject) Hudson.getInstance().getItemByFullName(job);
             prj.checkPermission(Item.CONFIGURE);
             FileItem file = req.getFileItem("secret.file");
             if (file == null) {
