@@ -11,7 +11,7 @@
     <packaging>hpi</packaging>
     <name>Build Secret plugin</name>
     <description>Lets you upload secret files to be used by a build.</description>
-    <url>http://wiki.hudson-ci.org/display/HUDSON/Build+Secret+Plugin</url>
+    <url>http://wiki.jenkins-ci.org/display/JENKINS/Build+Secret+Plugin</url>
     <developers>
         <developer>
             <id>jglick</id>
@@ -57,6 +57,12 @@
             <url>http://repo.jenkins-ci.org/public/</url>
         </pluginRepository>
     </pluginRepositories>
+
+    <scm>
+      <connection>scm:git:git://github.com/jenkinsci/${project.artifctId}-plugin.git</connection>
+      <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
+      <url>http://github.com/jenkinsci/${project.artifactId}-plugin</url>
+    </scm>
 </project>  
   
 
